@@ -118,7 +118,7 @@
         return copy;
     }
     
-    copy.messageBubbleFont = self.messageBubbleFont;
+    copy.messageBubbleFont = self.messageBubbleFont == nil ? [UIFont systemFontOfSize:14] : self.messageBubbleFont;
     copy.messageBubbleLeftRightMargin = self.messageBubbleLeftRightMargin;
     copy.textViewFrameInsets = self.textViewFrameInsets;
     copy.textViewTextContainerInsets = self.textViewTextContainerInsets;

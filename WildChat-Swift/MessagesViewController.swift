@@ -8,10 +8,12 @@
 
 import UIKit
 import Foundation
+import WilddogSync
+import WilddogAuth
 
 class MessagesViewController: JSQMessagesViewController {
     
-    var user: WAuthData?
+    var user: WDGUser?
     
     var messages = [Message]()
     var avatars = Dictionary<String, UIImage>()
@@ -20,6 +22,7 @@ class MessagesViewController: JSQMessagesViewController {
     var senderImageUrl: String!
     var batchMessages = true
     var ref: Wilddog!
+    var auth: WDGAuth!
     
     
     // *** STEP 1: STORE WILDDOG REFERENCES
@@ -31,9 +34,9 @@ class MessagesViewController: JSQMessagesViewController {
         
         // *** STEP 4: RECEIVE MESSAGES FROM WILDDOG
         messagesRef.observeEventType(WEventType.ChildAdded, withBlock: { (snapshot) in
-            let text = snapshot.value["text"] as? String
-            let sender = snapshot.value["sender"] as? String
-            let imageUrl = snapshot.value["imageUrl"] as? String
+            let text = snapshot.value!["text"] as? String
+            let sender = snapshot.value!["sender"] as? String
+            let imageUrl = snapshot.value!["imageUrl"] as? String
             
             let message = Message(text: text, sender: sender, imageUrl: imageUrl)
             self.messages.append(message)
@@ -95,7 +98,10 @@ class MessagesViewController: JSQMessagesViewController {
         navigationController?.navigationBar.topItem?.title = "Logout"
         
         sender = (sender != nil) ? sender : "Anonymous"
-        let profileImageUrl = user?.providerData["cachedUserProfile"]?["profile_image_url_https"] as? NSString
+        var profileImageUrl : String!
+        if user?.providerData.count > 0 {
+            profileImageUrl = try! NSString(contentsOfURL: (user?.providerData[0].photoURL)!, encoding: 0) as String
+        }
         if let urlString = profileImageUrl {
             setupAvatarImage(sender, imageUrl: urlString as String, incoming: false)
             senderImageUrl = urlString as String
@@ -115,8 +121,8 @@ class MessagesViewController: JSQMessagesViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
-        if ref != nil {
-            ref.unauth()
+        if auth != nil {
+            try! auth.signOut()
         }
     }
     

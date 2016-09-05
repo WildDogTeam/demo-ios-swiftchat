@@ -15,7 +15,6 @@
 		3904305E1BCBA73600B97C64 /* WildChat_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904305D1BCBA73600B97C64 /* WildChat_SwiftUITests.swift */; };
 		390430701BCBAB8B00B97C64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904306F1BCBAB8B00B97C64 /* LoginViewController.swift */; };
 		390430751BCBB81900B97C64 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390430741BCBB81900B97C64 /* JavaScriptCore.framework */; };
-		395852521BD61B2600068150 /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395852511BD61B2600068150 /* Wilddog.framework */; };
 		396A3F461BF0B88C0032CAA3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 396A3F451BF0B88C0032CAA3 /* libsqlite3.0.tbd */; };
 		39BAEFC71BD4E41700BF081F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAEFC61BD4E41700BF081F /* MessagesViewController.swift */; };
 		39BAEFC91BD4E4B600BF081F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BAEFC81BD4E4B600BF081F /* Social.framework */; };
@@ -77,6 +76,7 @@
 		39D0B3D51BD4E80D00BD17F4 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D0B3A41BD4E80D00BD17F4 /* JSQMessagesTypingIndicatorFooterView.xib */; };
 		39D0B3DA1BD4E81700BD17F4 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0B3D91BD4E81700BD17F4 /* JSQSystemSoundPlayer.m */; };
 		39D0B3E11BD4EAE300BD17F4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0B3E01BD4EAE300BD17F4 /* Message.swift */; };
+		BCF66E5967C152E0309EA7B5 /* Pods_WildChat_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E39ED2F0F3D818FA2684FAE /* Pods_WildChat_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD7A3B3B2CCF01BBB244821 /* Pods-WildChat-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WildChat-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WildChat-Swift/Pods-WildChat-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		390430381BCBA73600B97C64 /* WildChat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WildChat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3904303B1BCBA73600B97C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		390430421BCBA73600B97C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		3904305F1BCBA73600B97C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3904306F1BCBAB8B00B97C64 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		390430741BCBB81900B97C64 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		395852511BD61B2600068150 /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
 		396A3F451BF0B88C0032CAA3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		39BAEFC61BD4E41700BF081F /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		39BAEFC81BD4E4B600BF081F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -202,6 +202,8 @@
 		39D0B3D91BD4E81700BD17F4 /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 		39D0B3DF1BD4E91100BD17F4 /* WildChat-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildChat-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		39D0B3E01BD4EAE300BD17F4 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7E39ED2F0F3D818FA2684FAE /* Pods_WildChat_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WildChat_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB16198D7C904AF7C20EA81F /* Pods-WildChat-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WildChat-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WildChat-Swift/Pods-WildChat-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +221,7 @@
 				39BAEFCB1BD4E4BE00BF081F /* Accounts.framework in Frameworks */,
 				39BAEFC91BD4E4B600BF081F /* Social.framework in Frameworks */,
 				390430751BCBB81900B97C64 /* JavaScriptCore.framework in Frameworks */,
-				395852521BD61B2600068150 /* Wilddog.framework in Frameworks */,
+				BCF66E5967C152E0309EA7B5 /* Pods_WildChat_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +250,7 @@
 				390430511BCBA73600B97C64 /* WildChat-SwiftTests */,
 				3904305C1BCBA73600B97C64 /* WildChat-SwiftUITests */,
 				390430391BCBA73600B97C64 /* Products */,
+				54A9A1CC9DA7CF1EDBB73D87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				396A3F451BF0B88C0032CAA3 /* libsqlite3.0.tbd */,
-				395852511BD61B2600068150 /* Wilddog.framework */,
 				39D0B3D61BD4E81700BD17F4 /* JSQSystemSoundPlayer */,
 				39D0B34F1BD4E80D00BD17F4 /* JSQMessagesViewController */,
 				39BAEFD61BD4E4F400BF081F /* SystemConfiguration.framework */,
@@ -311,6 +313,7 @@
 				39BAEFCA1BD4E4BE00BF081F /* Accounts.framework */,
 				39BAEFC81BD4E4B600BF081F /* Social.framework */,
 				390430741BCBB81900B97C64 /* JavaScriptCore.framework */,
+				7E39ED2F0F3D818FA2684FAE /* Pods_WildChat_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -489,6 +492,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		54A9A1CC9DA7CF1EDBB73D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB16198D7C904AF7C20EA81F /* Pods-WildChat-Swift.debug.xcconfig */,
+				0CD7A3B3B2CCF01BBB244821 /* Pods-WildChat-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -496,9 +508,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390430621BCBA73600B97C64 /* Build configuration list for PBXNativeTarget "WildChat-Swift" */;
 			buildPhases = (
+				84B0E51611BAE3ADDC66C3F4 /* [CP] Check Pods Manifest.lock */,
 				390430341BCBA73600B97C64 /* Sources */,
 				390430351BCBA73600B97C64 /* Frameworks */,
 				390430361BCBA73600B97C64 /* Resources */,
+				187D8B4D8BAC704B4BAB2A29 /* [CP] Embed Pods Frameworks */,
+				736DC3CAF565DA41AF86F956 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -638,6 +653,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187D8B4D8BAC704B4BAB2A29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WildChat-Swift/Pods-WildChat-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		736DC3CAF565DA41AF86F956 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WildChat-Swift/Pods-WildChat-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84B0E51611BAE3ADDC66C3F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		390430341BCBA73600B97C64 /* Sources */ = {
@@ -811,11 +874,17 @@
 		};
 		390430631BCBA73600B97C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB16198D7C904AF7C20EA81F /* Pods-WildChat-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/WilddogAuth\"",
 				);
 				INFOPLIST_FILE = "WildChat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -829,11 +898,17 @@
 		};
 		390430641BCBA73600B97C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD7A3B3B2CCF01BBB244821 /* Pods-WildChat-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/WilddogAuth\"",
 				);
 				INFOPLIST_FILE = "WildChat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;

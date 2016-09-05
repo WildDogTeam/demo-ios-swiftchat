@@ -7,16 +7,18 @@
 //
 
 import UIKit
-import Wilddog
+import WilddogAuth
+import WilddogSync
 
 class LoginViewController: UIViewController {
 
     var ref: Wilddog!
+    var auth: WDGAuth!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Wilddog(url: "https://swift-chat.wilddogio.com")
-        
+        auth = WDGAuth.auth(appID: "swift-chat")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -26,19 +28,20 @@ class LoginViewController: UIViewController {
 
     @IBAction func login(sender: AnyObject) {
 
-        [ref.authAnonymouslyWithCompletionBlock({ (error , authData) -> Void in
+        auth?.signInAnonymouslyWithCompletion(){(user, error) in
             if error != nil{
                 //There was an error authenticating
-            }else {
-                NSLog("uid : %@", (authData?.uid)!)
+            }else{
+                NSLog("uid : %@", (user?.uid)!)
                 let messagesVc = MessagesViewController()
-                messagesVc.user = authData
-                let sub = authData.uid[authData.uid.startIndex.advancedBy(10)..<authData.uid.endIndex]
+                messagesVc.user = user
+                let sub = user?.uid[(user?.uid.startIndex.advancedBy(10))!..<(user?.uid.endIndex)!]
                 messagesVc.sender = sub
                 messagesVc.ref = self.ref
+                messagesVc.auth = self.auth
                 self.navigationController!.pushViewController(messagesVc, animated: true)
             }
-        })]
+        }
     }
     
     
