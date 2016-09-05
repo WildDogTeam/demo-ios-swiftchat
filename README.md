@@ -3,13 +3,14 @@
 
 ### 本地运行
 
-首先确认本机已经安装Xcode 运行环境，然后执行，模拟器或者真机：
+首先确认本机已经安装 Xcode 运行环境，然后执行，模拟器或者真机：
 
 ### 克隆 demo
 
 ```
 git clone https://github.com/WildDogTeam/demo-ios-swiftchat.git
 cd  demo-ios-swiftchat
+pod install
 ```
 
 ### 注册 Wilddog
