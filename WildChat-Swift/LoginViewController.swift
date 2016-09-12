@@ -12,13 +12,13 @@ import WilddogSync
 
 class LoginViewController: UIViewController {
 
-    var ref: Wilddog!
+    var ref: WDGSyncReference!
     var auth: WDGAuth!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Wilddog(url: "https://swift-chat.wilddogio.com")
-        auth = WDGAuth.auth(appID: "swift-chat")
+        ref = WDGSync.sync().reference()
+        auth = WDGAuth.auth()
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -8,8 +8,7 @@
 
 import UIKit
 import Foundation
-import WilddogSync
-import WilddogAuth
+import Wilddog
 
 class MessagesViewController: JSQMessagesViewController {
     
@@ -21,19 +20,19 @@ class MessagesViewController: JSQMessagesViewController {
     var incomingBubbleImageView = JSQMessagesBubbleImageFactory.incomingMessageBubbleImageViewWithColor(UIColor.jsq_messageBubbleGreenColor())
     var senderImageUrl: String!
     var batchMessages = true
-    var ref: Wilddog!
+    var ref: WDGSyncReference!
     var auth: WDGAuth!
     
     
     // *** STEP 1: STORE WILDDOG REFERENCES
-    var messagesRef: Wilddog!
+    var messagesRef: WDGSyncReference!
     
     func setupWilddog() {
         // *** STEP 2: SETUP WILDDOG
-        messagesRef = Wilddog(url: "https://swift-chat.wilddogio.com/messages")
+        messagesRef = WDGSync.sync().reference().child("messages")
         
         // *** STEP 4: RECEIVE MESSAGES FROM WILDDOG
-        messagesRef.observeEventType(WEventType.ChildAdded, withBlock: { (snapshot) in
+        messagesRef.observeEventType(WDGDataEventType.ChildAdded, withBlock: { (snapshot) in
             let text = snapshot.value!["text"] as? String
             let sender = snapshot.value!["sender"] as? String
             let imageUrl = snapshot.value!["imageUrl"] as? String

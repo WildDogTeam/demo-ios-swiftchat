@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Wilddog
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //初始化 WDGApp
+        let options = WDGOptions.init(syncURL: "https://swift-chat.wilddogio.com")
+        WDGApp.configureWithOptions(options)
+
         return true
     }
 
